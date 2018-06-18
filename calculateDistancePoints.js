@@ -17,9 +17,8 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
     typeof kPoint === "number"
   ) {
     return 120 + (distance - kPoint) * 1.2;
-  } else {
-    return "Wrong type of data";
   }
+  return "Wrong type of data";
 };
 
 module.exports = calculateDistancePoints;
